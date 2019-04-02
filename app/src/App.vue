@@ -4,7 +4,6 @@
     <div class="container">
     <router-view/>
     </div>
-    <div class="row"></div><br><br><br>
     <bottom></bottom>
   </div>
 </template>
@@ -30,6 +29,7 @@ export default {
 </script>
 
 <style>
+@import url("https://use.fontawesome.com/releases/v5.7.2/css/all.css");
 #app {
   padding: 0px 0px 0px 0px;
 }
@@ -58,5 +58,33 @@ header {
 }
 p {
   font-size: 20px;
+}
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
 </style>

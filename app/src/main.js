@@ -8,6 +8,7 @@ import Datetime from 'vue-datetime'
 import '../node_modules/bootstrap/dist/css/bootstrap.css'
 import '../node_modules/bootstrap-vue/dist/bootstrap-vue.css'
 import '../node_modules/vue-datetime/dist/vue-datetime.css'
+import { store } from './store/store'
 
 Vue.config.productionTip = false
 Vue.use(BootstrapVue)
@@ -16,6 +17,7 @@ Vue.use(Datetime)
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
+  store,
   router,
   components: { App },
   template: '<App/>'

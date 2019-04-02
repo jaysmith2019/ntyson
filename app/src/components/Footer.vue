@@ -1,7 +1,7 @@
 <template>
 <nav class="navbar fixed-bottom">
-  <div class="container-fluid">
-  <ul class="nav" style="margin-left:425px;">
+  <div class="container">
+  <ul class="nav">
   <li class="nav-item">
     <a class="nav-link" href="#">Terms & Conditions</a>
   </li>
@@ -46,10 +46,42 @@ export default {
 .navbar-brand {
   color: black;
   font-weight:bold;
-  font-size: 24px;
 }
 .navbar-brand:hover {
   color: black;
+}
+.nav-item {
+  padding-left:35px;
+  padding-right:35px;
+}
+@media only screen and (min-width:601px) and (max-width:1024px) {
+  .nav-item {
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-right: -20px;
+  }
+}
+@media only screen and (min-width:400px) and (max-width: 600px) {
+.nav-item{
+  padding-left:0px !important;
+  padding-right:0px !important;
+}
+.nav-link {
+  margin-right:-25px;
+  font-size:8px;
+  font-weight:700;
+}
+}
+@media only screen and (max-width: 380px) {
+.nav-item{
+  padding-left:0px !important;
+  padding-right:0px !important;
+}
+.nav-link {
+  margin-right:-25px;
+  font-weight:800;
+  font-size:6px;
+}
 }
 </style>
 <!-- Add "scoped" attribute to limit CSS to this component only -->
